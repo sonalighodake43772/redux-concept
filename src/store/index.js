@@ -9,10 +9,16 @@ if(action.type==="increment")
     }
 }
 
-if(action.type==="increase")
+if(action.type==="incrementby5")
 {
     return{
         counter:state.counter+action.amount
+    }
+}
+if(action.type==="decrementby5")
+{
+    return{
+        counter:state.counter-action.amount
     }
 }
 if(action.type==="incrementby2")
